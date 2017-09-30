@@ -128,6 +128,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
 
@@ -136,6 +137,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
+            <!--<version>6.11</version>-->
             <scope>test</scope>
         </dependency>
 
@@ -180,6 +182,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
+            <version>1.1.3</version>
         </dependency>
 
         <!-- 阿里巴巴的JSON 处理器 -->
@@ -187,6 +190,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <version>1.2.38</version>
         </dependency>
 
         <!-- Java数据库连接，提供了一种与平台无关的用于执行SQL语句的标准javaAPI，可以方便实现多种关系型数据库的统一操作 -->
@@ -215,7 +219,8 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>9.4.1211.jre7</version>
+            <!--<version>9.4.1211.jre7</version>-->
+            <version>42.1.4</version>
         </dependency>
 
         <!-- MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射 -->
@@ -239,6 +244,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
             <scope>provided</scope>
         </dependency>
 
@@ -261,6 +267,7 @@
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
         </dependency>
 
         <!-- FTP 上传工具包 -->
@@ -268,6 +275,15 @@
         <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
+            <version>3.6</version>
+        </dependency>
+
+        <!-- 开源进程内存缓存框架 -->
+        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache -->
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>3.4.0</version>
         </dependency>
 
         <!-- 开源进程内存缓存框架 -->
@@ -275,6 +291,7 @@
         <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
+            <version>2.10.4</version>
         </dependency>
 
         <!-- 用Java编写的免费开源的跨平台的 Java API，Apache POI提供API给Java程式对Microsoft Office格式档案读和写的功能。POI为“Poor Obfuscation Implementation”的首字母缩写，意为“可怜的模糊实现” -->
@@ -282,6 +299,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
+            <version>3.17</version>
         </dependency>
 
         <!-- Apache 的excel 处理框架 -->
@@ -289,6 +307,15 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
+            <version>3.17</version>
+        </dependency>
+
+        <!-- 分页 -->
+        <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.2</version>
         </dependency>
 
         <!-- 分页 -->
@@ -303,6 +330,16 @@
         <dependency>
             <groupId>com.belerweb</groupId>
             <artifactId>pinyin4j</artifactId>
+            <version>2.5.1</version>
         </dependency>
+
+        <!-- 字符串操作类 -->
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.6</version>
+        </dependency>
+
     </dependencies>
 </project>
