@@ -3,7 +3,7 @@ package main.configuration;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
@@ -11,12 +11,12 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 /**
- * 消息转换器
- * @Author 蟑螂
+ * 适配器
+ * @author 蟑螂
  * @Create 2017-09-30 19:27
  */
-@SpringBootApplication/*@Configuration,@EnableAutoConfiguration,@ComponentScan 统一注解*/
-public class MVCConfig extends WebMvcConfigurerAdapter {
+@Configuration
+public class WebMvcAdapterConfiguration extends WebMvcConfigurerAdapter {
     /**
      * 扩展消息转换器链表--JSON
      * @param converters
