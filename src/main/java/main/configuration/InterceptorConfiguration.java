@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 拦截器
- * @author 蟑螂
- * @Create 2018-01-08 16:22
+ * @author 懒♂癌
+ * @date 2018-01-08 16:22
  */
 @Configuration
 public class InterceptorConfiguration implements HandlerInterceptor {
@@ -22,6 +22,8 @@ public class InterceptorConfiguration implements HandlerInterceptor {
      * @param o
      * @return
      * @throws Exception
+     * @author 懒♂癌
+     * @date 2018-01-09 16:48
      */
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
@@ -36,6 +38,8 @@ public class InterceptorConfiguration implements HandlerInterceptor {
      * @param o
      * @param modelAndView
      * @throws Exception
+     * @author 懒♂癌
+     * @date 2018-01-09 16:48
      */
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
@@ -49,6 +53,8 @@ public class InterceptorConfiguration implements HandlerInterceptor {
      * @param o
      * @param e
      * @throws Exception
+     * @author 懒♂癌
+     * @date 2018-01-09 16:49
      */
     @Override
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {

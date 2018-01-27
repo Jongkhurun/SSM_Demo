@@ -7,8 +7,8 @@ import java.io.IOException;
 
 /**
  * 过滤器
- * @author 蟑螂
- * @Create 2018-01-08 16:32
+ * @author 懒♂癌
+ * @date 2018-01-08 16:32
  */
 @Configuration
 public class FilterConfiguration implements Filter {
@@ -16,6 +16,8 @@ public class FilterConfiguration implements Filter {
      * 过滤器初始化
      * @param filterConfig
      * @throws ServletException
+     * @author 懒♂癌
+     * @date 2018-01-09 16:46
      */
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -28,7 +30,8 @@ public class FilterConfiguration implements Filter {
      * @param servletResponse
      * @param filterChain
      * @throws IOException
-     * @throws ServletException
+     * @author 懒♂癌
+     * @date 2018-01-09 16:46
      */
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
@@ -37,6 +40,8 @@ public class FilterConfiguration implements Filter {
 
     /**
      * 过滤器销毁
+     * @author 懒♂癌
+     * @date 2018-01-09 16:47
      */
     @Override
     public void destroy() {

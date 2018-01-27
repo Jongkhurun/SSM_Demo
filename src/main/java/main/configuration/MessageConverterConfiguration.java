@@ -11,8 +11,8 @@ import java.io.IOException;
 
 /**
  * 消息转换器
- * @author 蟑螂
- * @Create 2018-01-08 16:44
+ * @author 懒♂癌
+ * @date 2018-01-08 16:44
  */
 @Configuration
 public class MessageConverterConfiguration extends FastJsonHttpMessageConverter {
@@ -23,6 +23,8 @@ public class MessageConverterConfiguration extends FastJsonHttpMessageConverter 
      * @return
      * @throws IOException
      * @throws HttpMessageNotReadableException
+     * @author 懒♂癌
+     * @date 2018-01-09 16:49
      */
     @Override
     protected Object readInternal(Class<?> clazz, HttpInputMessage inputMessage) throws IOException, HttpMessageNotReadableException {
@@ -37,6 +39,8 @@ public class MessageConverterConfiguration extends FastJsonHttpMessageConverter 
      * @param outputMessage
      * @throws IOException
      * @throws HttpMessageNotWritableException
+     * @author 懒♂癌
+     * @date 2018-01-09 16:50
      */
     @Override
     protected void writeInternal(Object obj, HttpOutputMessage outputMessage) throws IOException, HttpMessageNotWritableException {

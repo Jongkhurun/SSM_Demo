@@ -12,14 +12,16 @@ import java.util.List;
 
 /**
  * 适配器
- * @author 蟑螂
- * @Create 2017-09-30 19:27
+ * @author 懒♂癌
+ * @date 2017-09-30 19:27
  */
 @Configuration
 public class WebMvcAdapterConfiguration extends WebMvcConfigurerAdapter {
     /**
      * 扩展消息转换器链表--JSON
      * @param converters
+     * @author 懒♂癌
+     * @date 2018-01-09 16:50
      */
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters){
