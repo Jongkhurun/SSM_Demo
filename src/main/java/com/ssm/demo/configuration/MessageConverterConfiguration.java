@@ -1,4 +1,4 @@
-package main.configuration;
+package com.ssm.demo.configuration;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.springframework.context.annotation.Configuration;

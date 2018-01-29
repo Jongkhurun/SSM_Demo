@@ -1,6 +1,6 @@
-package main.api.test;
+package com.ssm.demo.api.test;
 
-import main.utils.common.RD;
+import com.ssm.demo.utils.common.RD;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ParamterModelApi {
     @RequestMapping("/obtain")
     public RD obtain(){
+        System.out.println("123");
         return RD.success();
     }
 }

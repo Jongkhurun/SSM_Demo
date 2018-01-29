@@ -1,4 +1,4 @@
-package main.configuration;
+package com.ssm.demo.configuration;
 
 import org.springframework.context.annotation.Configuration;
 

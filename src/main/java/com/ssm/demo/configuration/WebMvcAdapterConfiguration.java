@@ -1,4 +1,4 @@
-package main.configuration;
+package com.ssm.demo.configuration;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;

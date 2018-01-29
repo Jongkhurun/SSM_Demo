@@ -1,9 +1,8 @@
-package main;
+package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -15,7 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 /*@ComponentScan/*会自动扫描指定包下的全部标有@Component 的类，并注册成bean，当然包括@Component下的子注解@Service,@Repository,@Controller*/
 @SpringBootApplication/*@Configuration,@EnableAutoConfiguration,@ComponentScan 统一注解*/
 @ServletComponentScan/*扫描过滤器、拦截器、监听器、servlet*/
-@EnableCaching/*缓存支持*/
+//@EnableCaching/*缓存支持*/
 @EnableTransactionManagement/*事物支持*/
 public class App {
     public static void main(String[] args) {
