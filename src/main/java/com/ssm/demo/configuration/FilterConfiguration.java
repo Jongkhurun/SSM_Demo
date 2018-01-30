@@ -29,8 +29,8 @@ public class FilterConfiguration implements Filter {
     /**
      * 过滤器操作
      *
-     * @param servletRequest
-     * @param servletResponse
+     * @param servletRequest 获取request对象
+     * @param servletResponse 获取response对象
      * @param filterChain
      * @throws IOException
      * @author 懒♂癌
@@ -38,8 +38,8 @@ public class FilterConfiguration implements Filter {
      */
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        filterChain.doFilter(servletRequest, servletResponse);
         System.out.println("过滤器操作");
+        filterChain.doFilter(servletRequest, servletResponse);
     }
 
     /**
