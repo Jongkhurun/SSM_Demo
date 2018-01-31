@@ -7,10 +7,11 @@ server:
 #    port: 16379
 #    password: sxx.123
 
-#spring.http.encoding.force: true
-#spring.http.encoding.charset: UTF-8
-#spring.http.encoding.enabled: true
-#server.tomcat.uri-encoding: UTF-8
+# 设置中文返回编码格式
+spring.http.encoding.force: true
+spring.http.encoding.charset: UTF-8
+spring.http.encoding.enabled: true
+server.tomcat.uri-encoding: UTF-8
 
-#加入 java 包 org.springframework.security ，需要进行身份验证，这里取消掉
+# 加入 java 包 org.springframework.security ，需要进行身份验证，这里取消掉
 security.basic.enabled: false

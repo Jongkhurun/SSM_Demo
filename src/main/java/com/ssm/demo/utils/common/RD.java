@@ -1,11 +1,14 @@
 package com.ssm.demo.utils.common;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 
 /**
  * @author 懒♂癌
  * @date 2018-01-27 17:20
  */
+@Data
 public class RD {
     private int state;
     private String msg;
