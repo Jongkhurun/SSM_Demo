@@ -8,6 +8,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * @author 懒♂癌
  * @date 2018-01-27 17:04
@@ -36,5 +38,16 @@ public class ParamterTestController {
     @RequestMapping("/obtainString")
     public  RD obtainString(){
         return RD.success();
+    }
+
+    /**
+     * 好像不可以接收List 模型
+     * @param o
+     * @return
+     */
+    @RequestMapping("/obtaisList")
+    public RD obtaisList(@Validated({Second.class}) List<ParamterTestVO> o){
+        System.out.println("List");
+        return RD.success(o);
     }
 }
