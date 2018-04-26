@@ -5,6 +5,7 @@ import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.ssm.demo.configuration.interceptor.InterceptorAdapterConfiguration;
+import com.ssm.demo.configuration.interceptor.InterceptorConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,8 +18,6 @@ import org.springframework.validation.Validator;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
-import org.springframework.web.multipart.MultipartResolver;
-import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.*;
@@ -178,7 +177,7 @@ public class WebMvcAdapterConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry interceptorRegistry) {
         System.out.println("******************************addInterceptors******************************添加拦截器");
         interceptorRegistry.addInterceptor(new InterceptorAdapterConfiguration()).excludePathPatterns("/sys/**");
-        interceptorRegistry.addInterceptor(new ListenerConfiguration()).excludePathPatterns("/sys/**");
+        interceptorRegistry.addInterceptor(new InterceptorConfiguration()).excludePathPatterns("/sys/**");
     }
 
     /**
