@@ -1,4 +1,4 @@
-package com.ssm.demo.utils.common;
+package com.ssm.demo.utils;
 
 import lombok.Data;
 

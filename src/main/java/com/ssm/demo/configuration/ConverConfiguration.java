@@ -15,7 +15,7 @@ import java.io.IOException;
  * @date 2018-01-08 16:44
  */
 @Configuration
-public class MessageConverterConfiguration extends FastJsonHttpMessageConverter {
+public class ConverConfiguration extends FastJsonHttpMessageConverter {
     /**
      * 请求进入到消息转化器
      * @param clazz

@@ -201,6 +201,12 @@
             <version>1.2.38</version>
         </dependency>
 
+        <!-- XML 处理 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
+
         <!-- Java数据库连接，提供了一种与平台无关的用于执行SQL语句的标准javaAPI，可以方便实现多种关系型数据库的统一操作 -->
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
         <dependency>

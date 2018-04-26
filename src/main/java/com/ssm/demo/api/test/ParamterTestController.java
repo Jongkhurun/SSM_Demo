@@ -3,7 +3,7 @@ package com.ssm.demo.api.test;
 import com.ssm.demo.domain.object.vo.ParamterTestVO;
 import com.ssm.demo.domain.object.vo.groups.First;
 import com.ssm.demo.domain.object.vo.groups.Second;
-import com.ssm.demo.utils.common.RD;
+import com.ssm.demo.utils.RD;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

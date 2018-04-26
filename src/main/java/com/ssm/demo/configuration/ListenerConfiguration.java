@@ -1,16 +1,16 @@
 package com.ssm.demo.configuration;
 
-import org.springframework.context.annotation.Configuration;
-
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 
 /**
  * 监听器
  * @author 懒♂癌
  * @date 2018-01-08 16:30
  */
-@Configuration
+//@Configuration
+@WebListener
 public class ListenerConfiguration implements ServletContextListener{
     /**
      * 监听器初始化
