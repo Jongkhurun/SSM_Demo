@@ -38,6 +38,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(MissingServletRequestParameterException.class)
     public RD handleMissingServletRequestParameterException(MissingServletRequestParameterException e) {
         logger.error("handleMissingServletRequestParameterException -- 缺少请求参数", e);
+        System.out.println("handleMissingServletRequestParameterException -- 缺少请求参数");
         return RD.exception("缺少请求参数");
     }
 
@@ -48,6 +49,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public RD handleHttpMessageNotReadableException(HttpMessageNotReadableException e) {
         logger.error("handleHttpMessageNotReadableException -- 参数解析失败", e);
+        System.out.println("handleHttpMessageNotReadableException -- 参数解析失败");
         return RD.exception("参数解析失败");
     }
 
@@ -58,6 +60,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public RD handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         logger.error("handleMethodArgumentNotValidException -- 参数验证失败", e);
+        System.out.println("handleMethodArgumentNotValidException -- 参数验证失败");
         BindingResult result = e.getBindingResult();
         FieldError error = result.getFieldError();
         String field = error.getField();
@@ -74,6 +77,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(BindException.class)
     public RD handleBindException(BindException e) {
         logger.error("handleBindException -- 参数绑定失败", e);
+        System.out.println("handleBindException -- 参数绑定失败");
         BindingResult result = e.getBindingResult();
         FieldError error = result.getFieldError();
         String field = error.getField();
@@ -89,6 +93,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(ConstraintViolationException.class)
     public RD handleServiceException(ConstraintViolationException e) {
         logger.error("handleServiceException -- 参数验证失败", e);
+        System.out.println("handleBindException -- 参数绑定失败");
         Set<ConstraintViolation<?>> violations = e.getConstraintViolations();
         ConstraintViolation<?> violation = violations.iterator().next();
         String message = violation.getMessage();
@@ -102,6 +107,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(ValidationException.class)
     public RD handleValidationException(ValidationException e) {
         logger.error("handleValidationException -- 参数验证失败", e);
+        System.out.println("handleBindException -- 参数绑定失败");
         return RD.exception("参数验证失败" + e.getMessage());
     }
 
@@ -112,6 +118,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
     public RD handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e) {
         logger.error("handleHttpRequestMethodNotSupportedException -- 不支持当前请求方法", e);
+        System.out.println("handleHttpRequestMethodNotSupportedException -- 不支持当前请求方法");
         return RD.exception("不支持当前请求方法");
     }
 
@@ -122,6 +129,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
     public RD handleHttpMediaTypeNotSupportedException(Exception e) {
         logger.error("handleHttpMediaTypeNotSupportedException -- 不支持当前媒体类型", e);
+        System.out.println("handleHttpMediaTypeNotSupportedException -- 不支持当前媒体类型");
         return RD.exception("不支持当前媒体类型");
     }
 
@@ -132,6 +140,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(ServiceException.class)
     public RD handleServiceException(ServiceException e) {
         logger.error("handleServiceException -- 业务逻辑异常", e);
+        System.out.println("handleServiceException -- 业务逻辑异常");
         return RD.exception("业务逻辑异常：" + e.getMessage());
     }
 
@@ -142,6 +151,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(Exception.class)
     public RD handleException(Exception e) {
         logger.error("handleException -- 通用异常", e);
+        System.out.println("handleException -- 通用异常");
         return RD.exception("通用异常：" + e.getMessage());
     }
 
@@ -152,6 +162,7 @@ public class GlobalExceptionConfiguration {
     @ExceptionHandler(DataIntegrityViolationException.class)
     public RD handleException(DataIntegrityViolationException e) {
         logger.error("handleException -- 操作数据库出现异常:", e);
+        System.out.println("handleException -- 操作数据库出现异常:");
         return RD.exception("操作数据库出现异常：字段重复、有外键关联等");
     }
 }

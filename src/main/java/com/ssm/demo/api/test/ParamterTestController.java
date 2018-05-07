@@ -19,24 +19,25 @@ import java.util.List;
 public class ParamterTestController {
     @RequestMapping("/obtain")
     public RD obtain(@Validated ParamterTestVO o){
-        System.out.println("123");
+        System.out.println("obtain");
         return RD.success(o);
     }
 
     @RequestMapping("/obtainFirst")
     public RD obtainFirst(@Validated({First.class}) ParamterTestVO o){
-        System.out.println("First");
+        System.out.println("obtainFirst");
         return RD.success(o);
     }
 
     @RequestMapping("/obtainSecond")
     public RD obtainSecond(@Validated({Second.class}) ParamterTestVO o){
-        System.out.println("Second");
+        System.out.println("obtainSecond");
         return RD.success(o);
     }
 
     @RequestMapping("/obtainString")
     public  RD obtainString(){
+        System.out.println("obtainString");
         return RD.success();
     }
 
@@ -47,7 +48,7 @@ public class ParamterTestController {
      */
     @RequestMapping("/obtaisList")
     public RD obtaisList(@Validated({Second.class}) List<ParamterTestVO> o){
-        System.out.println("List");
+        System.out.println("obtaisList");
         return RD.success(o);
     }
 }

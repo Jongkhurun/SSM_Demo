@@ -19,7 +19,7 @@ import java.util.List;
  * @author 懒♂癌
  * @date 2018-01-27 15:22
  */
-@ControllerAdvice
+//@ControllerAdvice
 public class ExceptionConfiguration extends ResponseEntityExceptionHandler {
 //    @Override
 //    protected ResponseEntity<Object> handleBindException(BindException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
