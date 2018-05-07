@@ -1,8 +1,8 @@
 package com.ssm.demo.api.test;
 
-import com.ssm.demo.domain.object.vo.ParamterTestVO;
-import com.ssm.demo.domain.object.vo.groups.First;
-import com.ssm.demo.domain.object.vo.groups.Second;
+import com.ssm.demo.domain.test.paramterTest.ParamterTestVO;
+import com.ssm.demo.domain.verificationGroups.First;
+import com.ssm.demo.domain.verificationGroups.Second;
 import com.ssm.demo.utils.RD;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;

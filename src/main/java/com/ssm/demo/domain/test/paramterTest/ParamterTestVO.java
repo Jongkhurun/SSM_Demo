@@ -1,7 +1,7 @@
-package com.ssm.demo.domain.object.vo;
+package com.ssm.demo.domain.test.paramterTest;
 
-import com.ssm.demo.domain.object.vo.groups.First;
-import com.ssm.demo.domain.object.vo.groups.Second;
+import com.ssm.demo.domain.verificationGroups.First;
+import com.ssm.demo.domain.verificationGroups.Second;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 

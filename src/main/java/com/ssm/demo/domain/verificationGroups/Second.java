@@ -1,4 +1,4 @@
-package com.ssm.demo.domain.object.vo.groups;
+package com.ssm.demo.domain.verificationGroups;
 
 /**
  * 验证分组 - 贰
