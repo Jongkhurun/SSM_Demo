@@ -15,7 +15,7 @@ import java.util.List;
  * @date 2018-01-27 17:04
  */
 @RestController
-@RequestMapping("/test/paramterTest")
+@RequestMapping("/test/paramtertest")
 public class ParamterTestController {
     @RequestMapping("/obtain")
     public RD obtain(@Validated ParamterTestVO o){

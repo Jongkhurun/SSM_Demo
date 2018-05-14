@@ -36,7 +36,7 @@ import java.util.List;
 @ResponseBody
 @Configuration
 @SpringBootApplication
-public class WebMvcAdapterConfiguration implements WebMvcConfigurer {
+public class WebMvcConfiguration implements WebMvcConfigurer {
     /**
      * 1.配置内容协商
      * @param contentNegotiationConfigurer

@@ -24,6 +24,9 @@ import javax.validation.ConstraintViolationException;
 import javax.validation.ValidationException;
 import java.util.Set;
 
+/**
+ * 全局异常拦截
+ */
 @ResponseBody
 @ControllerAdvice
 public class GlobalExceptionConfiguration {
